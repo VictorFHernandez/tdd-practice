@@ -33,4 +33,14 @@ public class MyFirstTest {
 
         assertArrayEquals(numbers, otherNumbers);
     }
+
+    @Test
+    public void assertBooleanTest(){
+        String language = "PHP";
+        language.contains("H"); // use assertTrue for this statement
+        language.contains("J"); // use assertFalse for this statement
+
+        assertTrue(language, language.contains("H"));
+        assertFalse(language, language.contains("J"));
+    }
 }
